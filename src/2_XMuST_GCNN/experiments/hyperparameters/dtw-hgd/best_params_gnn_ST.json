@@ -1,0 +1,379 @@
+{
+    "device": "cuda:0",
+    "folders": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+    ],
+    "seed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+    ],
+    "norm": "minMax_per_patient",
+    "way_to_build_graph": "dtw-hgd",
+    "n_trials": 50,
+    "numberOfTimeStep": 14,
+    "path_S_static": "adj_X_train_static__th_0.975.csv",
+    "SG": true,
+    "use_transformer": false,
+    "device_id": 1,
+    "path_S_temporal": "SpaceTimeGraph_Xtr_minMax_per_patient_th_0.975.csv",
+    "temporal_gnn_params": {
+        "in_dim": 1,
+        "out_dim": 1,
+        "dropout": [
+            0.0,
+            0.3
+        ],
+        "hid_dim": [
+            4,
+            32
+        ],
+        "layers": [
+            1,
+            3
+        ],
+        "embedding_dim": 1190
+    },
+    "static_gnn_params": {
+        "in_dim": 1,
+        "out_dim": 1,
+        "dropout": [
+            0.0,
+            0.3
+        ],
+        "hid_dim": [
+            4,
+            32
+        ],
+        "layers": [
+            1,
+            3
+        ],
+        "embedding_dim": 3
+    },
+    "rnn_params": {
+        "in_dim": 85,
+        "hidden_dim": [
+            32,
+            128
+        ],
+        "num_layers": [
+            1,
+            3
+        ],
+        "bidirectional": [
+            false
+        ],
+        "dropout": [
+            0.0,
+            0.3
+        ],
+        "d_state": [
+            8,
+            16,
+            32
+        ],
+        "d_conv": [
+            2,
+            4,
+            8
+        ],
+        "expand": [
+            1,
+            2,
+            4
+        ]
+    },
+    "transformer_params": {
+        "in_dim": 85,
+        "num_layers": [
+            32,
+            128
+        ],
+        "nhead": [
+            1,
+            5
+        ],
+        "dropout": [
+            0.0,
+            0.3
+        ]
+    },
+    "fusion_params": {
+        "fc_dim": [
+            1193
+        ],
+        "dropout": [
+            0.0,
+            0.3
+        ]
+    },
+    "train_params": {
+        "learning_rate": [
+            0.001,
+            0.1
+        ],
+        "decay": [
+            1e-05,
+            0.1
+        ],
+        "n_epochs": 1000,
+        "early_stopping_patience": 50
+    },
+    "1": {
+        "temporal_gnn_params": {
+            "dropout": 0.04154441368688688,
+            "hid_dim": 27,
+            "layers": 2,
+            "in_dim": 1,
+            "out_dim": 1,
+            "embedding_dim": 1190
+        },
+        "static_gnn_params": {
+            "dropout": 0.05210220963174681,
+            "hid_dim": 4,
+            "layers": 3,
+            "in_dim": 1,
+            "out_dim": 1,
+            "embedding_dim": 3
+        },
+        "train_params": {
+            "learning_rate": 0.0038820500391584718,
+            "decay": 0.04892566651218702,
+            "n_epochs": 1000,
+            "early_stopping_patience": 50
+        }
+    },
+    "2": {
+        "temporal_gnn_params": {
+            "dropout": 0.11609966115025434,
+            "hid_dim": 11,
+            "layers": 3,
+            "in_dim": 1,
+            "out_dim": 1,
+            "embedding_dim": 1190
+        },
+        "static_gnn_params": {
+            "dropout": 0.1263263215701173,
+            "hid_dim": 4,
+            "layers": 1,
+            "in_dim": 1,
+            "out_dim": 1,
+            "embedding_dim": 3
+        },
+        "train_params": {
+            "learning_rate": 0.0013234711195577215,
+            "decay": 0.00820983088731645,
+            "n_epochs": 1000,
+            "early_stopping_patience": 50
+        }
+    },
+    "3": {
+        "temporal_gnn_params": {
+            "dropout": 0.26963402302851447,
+            "hid_dim": 22,
+            "layers": 3,
+            "in_dim": 1,
+            "out_dim": 1,
+            "embedding_dim": 1190
+        },
+        "static_gnn_params": {
+            "dropout": 0.05584639792597086,
+            "hid_dim": 12,
+            "layers": 3,
+            "in_dim": 1,
+            "out_dim": 1,
+            "embedding_dim": 3
+        },
+        "train_params": {
+            "learning_rate": 0.002392391381285542,
+            "decay": 0.00028610942010306594,
+            "n_epochs": 1000,
+            "early_stopping_patience": 50
+        }
+    },
+    "4": {
+        "temporal_gnn_params": {
+            "dropout": 0.21652659522953985,
+            "hid_dim": 12,
+            "layers": 3,
+            "in_dim": 1,
+            "out_dim": 1,
+            "embedding_dim": 1190
+        },
+        "static_gnn_params": {
+            "dropout": 0.21437273501930718,
+            "hid_dim": 19,
+            "layers": 1,
+            "in_dim": 1,
+            "out_dim": 1,
+            "embedding_dim": 3
+        },
+        "train_params": {
+            "learning_rate": 0.005580608035560952,
+            "decay": 0.004972038241366515,
+            "n_epochs": 1000,
+            "early_stopping_patience": 50
+        }
+    },
+    "5": {
+        "temporal_gnn_params": {
+            "dropout": 0.17397425031239264,
+            "hid_dim": 27,
+            "layers": 1,
+            "in_dim": 1,
+            "out_dim": 1,
+            "embedding_dim": 1190
+        },
+        "static_gnn_params": {
+            "dropout": 0.28101756123867777,
+            "hid_dim": 30,
+            "layers": 2,
+            "in_dim": 1,
+            "out_dim": 1,
+            "embedding_dim": 3
+        },
+        "train_params": {
+            "learning_rate": 0.002031172466873504,
+            "decay": 0.023697908316158534,
+            "n_epochs": 1000,
+            "early_stopping_patience": 50
+        }
+    },
+    "6": {
+        "temporal_gnn_params": {
+            "dropout": 0.17354072363660616,
+            "hid_dim": 30,
+            "layers": 3,
+            "in_dim": 1,
+            "out_dim": 1,
+            "embedding_dim": 1190
+        },
+        "static_gnn_params": {
+            "dropout": 0.252975355585493,
+            "hid_dim": 32,
+            "layers": 2,
+            "in_dim": 1,
+            "out_dim": 1,
+            "embedding_dim": 3
+        },
+        "train_params": {
+            "learning_rate": 0.010200724210471015,
+            "decay": 0.08073151269211934,
+            "n_epochs": 1000,
+            "early_stopping_patience": 50
+        }
+    },
+    "7": {
+        "temporal_gnn_params": {
+            "dropout": 0.12672270620881745,
+            "hid_dim": 27,
+            "layers": 3,
+            "in_dim": 1,
+            "out_dim": 1,
+            "embedding_dim": 1190
+        },
+        "static_gnn_params": {
+            "dropout": 0.20776388886130084,
+            "hid_dim": 32,
+            "layers": 3,
+            "in_dim": 1,
+            "out_dim": 1,
+            "embedding_dim": 3
+        },
+        "train_params": {
+            "learning_rate": 0.0012793931805127991,
+            "decay": 0.0010869663150229847,
+            "n_epochs": 1000,
+            "early_stopping_patience": 50
+        }
+    },
+    "8": {
+        "temporal_gnn_params": {
+            "dropout": 0.23379312871533284,
+            "hid_dim": 29,
+            "layers": 3,
+            "in_dim": 1,
+            "out_dim": 1,
+            "embedding_dim": 1190
+        },
+        "static_gnn_params": {
+            "dropout": 0.18399102565196948,
+            "hid_dim": 16,
+            "layers": 2,
+            "in_dim": 1,
+            "out_dim": 1,
+            "embedding_dim": 3
+        },
+        "train_params": {
+            "learning_rate": 0.004240712259877668,
+            "decay": 0.05755356044036669,
+            "n_epochs": 1000,
+            "early_stopping_patience": 50
+        }
+    },
+    "9": {
+        "temporal_gnn_params": {
+            "dropout": 0.166352377161387,
+            "hid_dim": 32,
+            "layers": 3,
+            "in_dim": 1,
+            "out_dim": 1,
+            "embedding_dim": 1190
+        },
+        "static_gnn_params": {
+            "dropout": 0.05971806495772612,
+            "hid_dim": 30,
+            "layers": 1,
+            "in_dim": 1,
+            "out_dim": 1,
+            "embedding_dim": 3
+        },
+        "train_params": {
+            "learning_rate": 0.007152394032467045,
+            "decay": 0.012924511743253991,
+            "n_epochs": 1000,
+            "early_stopping_patience": 50
+        }
+    },
+    "10": {
+        "temporal_gnn_params": {
+            "dropout": 0.03416897783666813,
+            "hid_dim": 32,
+            "layers": 2,
+            "in_dim": 1,
+            "out_dim": 1,
+            "embedding_dim": 1190
+        },
+        "static_gnn_params": {
+            "dropout": 0.18431270891655616,
+            "hid_dim": 17,
+            "layers": 2,
+            "in_dim": 1,
+            "out_dim": 1,
+            "embedding_dim": 3
+        },
+        "train_params": {
+            "learning_rate": 0.004997388553045877,
+            "decay": 0.01887913554052001,
+            "n_epochs": 1000,
+            "early_stopping_patience": 50
+        }
+    }
+}

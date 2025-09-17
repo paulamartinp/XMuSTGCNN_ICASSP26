@@ -1,0 +1,1 @@
+This folder stores the .pth models. For Github submission, this folder will be empty to avoid issues with large files. 
